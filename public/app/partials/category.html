@@ -10,7 +10,17 @@
         <fieldset>
             <legend>Suggested product for {{ category }}</legend>
             <ul ng-repeat="suggestion in suggestions">
-                <li>name :{{suggestion.name}},url : {{suggestion.url}}, category:{{suggestion.category}}</li>
+
+                <li>
+                    <fieldset>
+                        <legend>{{suggestion.name}}</legend>
+                        <ul>
+                            <li>url : {{suggestion.url}}</li>
+                            <li>comment:{{suggestion.comment}}</li>
+                            <li>email:{{suggestion.email}}</li>
+                        </ul>
+                    </fieldset>
+                </li>
             </ul>
         </fieldset>
     </div>
