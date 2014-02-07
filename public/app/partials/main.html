@@ -1,0 +1,69 @@
+<div class="container">
+
+    <header>
+        </header>
+
+
+    <br>
+
+    <div>
+        <fieldset>
+            <legend>Suggest a product</legend>
+            <form class="form-horizontal" role="form">
+
+                <div class="form-group">
+                    <label for="inputName" class="col-sm-2 control-label">Product Name</label>
+
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputName" placeholder="Name" ng-model="suggestProduct.name" >
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="url" class="col-sm-2 control-label">Product Url (where you saw the product)</label>
+
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="url" placeholder="http://url.com" ng-model="suggestProduct.url" >
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="category" class="col-sm-2 control-label">Category</label>
+
+                    <div class="col-sm-10">
+                        <select class="form-control" id="category" ng-model="suggestProduct.category" >
+                            <option name="electronic">electronic</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment" class="col-sm-2 control-label">Any comment?</label>
+
+                    <div class="col-sm-10">
+                            <textarea id="comment" class="form-control" rows="3" ng-model="suggestProduct.comment"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email (to get information about this product)</label>
+
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputEmail3" placeholder="Email" ng-model="suggestProduct.email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                        <button type="submit" class="btn btn-default" ng-click="submit()">Submit suggestion</button>
+                    </div>
+                </div>
+            </form>
+
+        </fieldset>
+    </div>
+
+    <div class="footer">
+        <p>&copy; Steve Lemanski & Maurin Lenglart</p>
+    </div>
+
+</div>
+<!-- /container -->

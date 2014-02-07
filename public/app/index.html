@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+    <title>Suggestions</title>
+    <link rel="stylesheet" href="app/css/boostrap.css"/>
+    <link rel="stylesheet" href="app/css/app.css"/>
+
+</head>
+<body>
+
+
+<div id="wrapper">
+
+    <div id="page-wrapper" ng-view ></div>
+</div>
+
+
+
+<script src="/socket.io/socket.io.js"></script>
+
+<script src="app/lib/angular/angular.js"></script>
+<script src="app/lib/angular/angular-resource.min.js"></script>
+<script src="app/lib/angular/angular-route.js"></script>
+<script src="app/lib/angular-bootstrap.js"></script>
+<script src="app/lib/ngSocket.js"></script>
+
+
+
+<script src="app/js/app.js"></script>
+<script src="app/js/services.js"></script>
+<script src="app/js/controllers.js"></script>
+<script src="app/js/filters.js"></script>
+<script src="app/js/directives.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<div class="container">
+
+    <header>
+    </header>
+
+
+    <br>
+
+    <div>
+        <fieldset>
+            <legend>Suggested product for {{ category }}</legend>
+            <ul ng-repeat="suggestion in suggestions">
+                <li>name :{{suggestion.name}},url : {{suggestion.url}}, category:{{suggestion.category}}</li>
+            </ul>
+        </fieldset>
+    </div>
+
+    <div class="footer">
+        <p>&copy; Steve Lemanski & Maurin Lenglart</p>
+    </div>
+
+
+    <!-- /container -->
+</div>
